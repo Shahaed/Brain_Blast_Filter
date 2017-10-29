@@ -21,7 +21,8 @@ def queryAccel():
         connection.close()
 
     print(len(result))
-    print(result)
+    for x in range(100):
+        print(result[x])
     return result
 
 if __name__ == '__main__':
