@@ -2,6 +2,7 @@ from flask import Flask
 from flaskext.mysql import MySQL
 from flask import jsonify
 import shortQuery
+import mathUtl
 
 mysql = MySQL()
 app = Flask(__name__)
@@ -20,7 +21,24 @@ def timeZ():
 
 @app.route('/OneSecAvr', methods=['POST'])
 def oneSecData():
-    return str(shortQuery.meanData(1736302585,1000))
+    zero = timeZ()
+    avgArr = shortQuery.meanData(zero,1000)
+    data = []
+    mag = mathUtl.magnitude(avgArr[0], avgArr[1], avgArr[2])
+    gyro = mathUtl.magnitude(avgArr[3], avgArr[4], avgArr[5])
+    concProb = mathUtl.concussion_probability(mag, gyro)
+
+    x= zero
+    while x < zero+1000000:
+        avgArr = shortQuery.meanData(x, 1000)
+        data.append(mathUtl.magnitude(avgArr[0],avgArr[1],avgArr[2]))
+        x+=1000
+
+
+    return jsonify({'name': 'Paul', 'position':'QB','concussion_risk':concProb,
+                   'data':data })
+
+
 
 
 @app.route('/')

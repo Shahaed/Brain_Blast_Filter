@@ -44,4 +44,4 @@ def meanData(timeZero, interval):
         gy.append(float(row['gy']))
         gz.append(float(row['gz']))
 
-    return mean(ax), mean(ay), mean(az), mean(gx), mean(gy), mean(gz) #One minute means
+    return [mean(ax), mean(ay), mean(az), mean(gx), mean(gy), mean(gz)] #One minute means
