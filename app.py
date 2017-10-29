@@ -20,10 +20,7 @@ def timeZ():
 
 @app.route('/OneSecAvr', methods=['POST'])
 def oneSecData():
-    cursor = mysql.get_db().cursor()
-    cursor.execute("SELECT `time_stamp` FROM accel_data")
-    timeZ = float(cursor.fetchone()[0])
-    return jsonify(shortQuery.meanData(timeZ(),1000))
+    return str(shortQuery.meanData(1736302585,1000))
 
 
 @app.route('/')
