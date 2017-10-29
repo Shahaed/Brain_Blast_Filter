@@ -22,6 +22,7 @@ def timeZ():
 @app.route('/OneSecAvr', methods=['POST'])
 def oneSecData():
     zero = timeZ()
+    print(zero)
     avgArr = shortQuery.meanData(zero,1000)
     data = []
     mag = mathUtl.magnitude(avgArr[0], avgArr[1], avgArr[2])
@@ -29,11 +30,11 @@ def oneSecData():
     concProb = mathUtl.concussion_probability(mag, gyro)
 
     x= zero
-    while x < zero+1000000:
+    while x < zero+10000:
         avgArr = shortQuery.meanData(x, 1000)
+        print(x)
         data.append(mathUtl.magnitude(avgArr[0],avgArr[1],avgArr[2]))
-        x+=1000
-
+        x+=500
 
     return jsonify({'name': 'Paul', 'position':'QB','concussion_risk':concProb,
                    'data':data })

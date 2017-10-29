@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbedf109-3e07-4142-a865-fe6f6d2c855a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/secondQuery.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.py" afterPath="$PROJECT_DIR$/app.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shortQuery.py" afterPath="$PROJECT_DIR$/shortQuery.py" />
@@ -14,8 +15,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Flask_Brain$shortQuery.coverage" NAME="shortQuery Coverage Results" MODIFIED="1509271354065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Flask_Brain$app.coverage" NAME="app Coverage Results" MODIFIED="1509272084470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Flask_Brain$shortQuery.coverage" NAME="shortQuery Coverage Results" MODIFIED="1509275253101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Flask_Brain$app.coverage" NAME="app Coverage Results" MODIFIED="1509275913162" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Flask_Brain$Flask_Brain.coverage" NAME="Flask_Brain Coverage Results" MODIFIED="1509264281686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Flask_Brain$brainQuery.coverage" NAME="brainQuery Coverage Results" MODIFIED="1509269875297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
@@ -26,18 +27,18 @@
     <fileColor scope="Non-Project Files (Material Palenight)" color="2f2e43" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.45652175">
       <split-first>
         <leaf>
           <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="733">
-                  <caret line="35" column="8" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+                <state relative-caret-position="293">
+                  <caret line="32" column="24" lean-forward="false" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
                   <folding>
                     <element signature="e#0#23#0" expanded="true" />
-                    <marker date="1509273522000" expanded="true" signature="471:506" ph="SELECT `time... accel_data" />
-                    <marker date="1509273522000" expanded="true" signature="1279:1303" ph="SELECT * FRO... accel_data" />
+                    <marker date="1509275989000" expanded="true" signature="471:506" ph="SELECT `time... accel_data" />
+                    <marker date="1509275989000" expanded="true" signature="1300:1324" ph="SELECT * FRO... accel_data" />
                   </folding>
                 </state>
               </provider>
@@ -80,17 +81,17 @@
         </leaf>
       </split-first>
       <split-second>
-        <splitter split-orientation="vertical" split-proportion="0.5">
+        <splitter split-orientation="vertical" split-proportion="0.25759163">
           <split-first>
             <leaf>
               <file leaf-file-name="shortQuery.py" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/shortQuery.py">
                   <provider selected="true" editor-type-id="text-editor">
                     <state relative-caret-position="966">
-                      <caret line="46" column="71" lean-forward="false" selection-start-line="46" selection-start-column="71" selection-end-line="46" selection-end-column="71" />
+                      <caret line="48" column="71" lean-forward="false" selection-start-line="48" selection-start-column="71" selection-end-line="48" selection-end-column="71" />
                       <folding>
-                        <marker date="1509272889000" expanded="true" signature="631:677" ph="SELECT * FRO... accel_data" />
-                        <marker date="1509272889000" expanded="true" signature="631:680" ph="SELECT * FRO... accel_data" />
+                        <marker date="1509275287000" expanded="true" signature="667:713" ph="SELECT * FRO... accel_data" />
+                        <marker date="1509275287000" expanded="true" signature="667:715" ph="SELECT * FRO... accel_data" />
                       </folding>
                     </state>
                   </provider>
@@ -110,13 +111,27 @@
           </split-first>
           <split-second>
             <leaf>
-              <file leaf-file-name="shortQuery.py" pinned="false" current-in-tab="true">
+              <file leaf-file-name="shortQuery.py" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/shortQuery.py">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="390">
-                      <caret line="46" column="71" lean-forward="false" selection-start-line="46" selection-start-column="71" selection-end-line="46" selection-end-column="71" />
+                    <state relative-caret-position="293">
+                      <caret line="24" column="26" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
                       <folding>
-                        <marker date="1509272889000" expanded="true" signature="631:677" ph="SELECT * FRO... accel_data" />
+                        <marker date="1509275287000" expanded="true" signature="667:713" ph="SELECT * FRO... accel_data" />
+                        <marker date="1509275287000" expanded="true" signature="667:719" ph="SELECT * FRO... accel_data" />
+                        <marker date="1509275287000" expanded="true" signature="667:735" ph="SELECT * FRO... accel_data" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="secondQuery.py" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/secondQuery.py">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="1027">
+                      <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+                      <folding>
+                        <marker date="1509275989000" expanded="true" signature="667:735" ph="SELECT * FRO... accel_data" />
                       </folding>
                     </state>
                   </provider>
@@ -148,6 +163,7 @@
         <option value="$PROJECT_DIR$/brainQuery.py" />
         <option value="$PROJECT_DIR$/shortQuery.py" />
         <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/secondQuery.py" />
       </list>
     </option>
   </component>
@@ -167,7 +183,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="1" />
     <option name="y" value="38" />
-    <option name="width" value="2162" />
+    <option name="width" value="2375" />
     <option name="height" value="1397" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -384,21 +400,36 @@
       <option name="project" value="LOCAL" />
       <updated>1509272360408</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="dd">
+      <created>1509273525318</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1509273525318</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="38" width="2162" height="1397" extended-state="0" />
-    <editor active="true" />
+    <frame x="1" y="38" width="2375" height="1397" extended-state="0" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902583" sideWeight="0.5022936" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32957292" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.062986" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25738725" sideWeight="0.4977064" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902583" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14575471" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22783826" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21539658" sideWeight="0.4977064" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22783826" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1324475" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -427,7 +458,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -496,14 +527,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shortQuery.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mathUtl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -512,14 +535,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/shortQuery.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/secondQuery.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1027">
+          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding>
+            <marker date="1509275989000" expanded="true" signature="667:735" ph="SELECT * FRO... accel_data" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="733">
-          <caret line="35" column="8" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+        <state relative-caret-position="293">
+          <caret line="32" column="24" lean-forward="false" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <marker date="1509273522000" expanded="true" signature="471:506" ph="SELECT `time... accel_data" />
-            <marker date="1509273522000" expanded="true" signature="1279:1303" ph="SELECT * FRO... accel_data" />
+            <marker date="1509275989000" expanded="true" signature="471:506" ph="SELECT `time... accel_data" />
+            <marker date="1509275989000" expanded="true" signature="1300:1324" ph="SELECT * FRO... accel_data" />
           </folding>
         </state>
       </provider>
