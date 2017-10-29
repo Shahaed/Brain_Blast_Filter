@@ -1,5 +1,5 @@
 Flask==0.12.2
-Flask-MySQL=1.4.0
+Flask-MySQL==1.4.0
 Jinja2==2.9.6
 MarkupSafe==1.0
 PyMySQL==0.7.11
