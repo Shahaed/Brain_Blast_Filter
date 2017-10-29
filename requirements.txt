@@ -9,3 +9,4 @@ gunicorn==19.7.1
 itsdangerous==0.24
 pip==9.0.1
 scipy==1.0.0
+Flask-Cors==3.0.3

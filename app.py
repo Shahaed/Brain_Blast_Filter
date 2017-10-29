@@ -1,11 +1,13 @@
 from flask import Flask
 from flaskext.mysql import MySQL
 from flask import jsonify
+from flask_cors import CORS
 import shortQuery
 import mathUtl
 
 mysql = MySQL()
 app = Flask(__name__)
+CORS(app)
 app.config['MYSQL_DATABASE_USER'] = 'phly'
 app.config['MYSQL_DATABASE_PASSWORD'] = 'phlyisthebest'
 app.config['MYSQL_DATABASE_DB'] = 'phly'
