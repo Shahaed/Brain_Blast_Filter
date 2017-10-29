@@ -14,16 +14,15 @@ def queryAccel():
 
         with connection.cursor() as cursor:
             # Read a single record
-            sql = "SELECT * FROM accel_data"
-            cursor.execute(sql)
-            result = cursor.fetchall()
+            cursor.execute("SELECT `time_stamp` FROM accel_data")
+            timeZ = float(cursor.fetchone()['time_stamp'])
+            print(timeZ)
+            cursor.execute("SELECT * FROM accel_data")
+            print(cursor.fetchall()[:500])
     finally:
         connection.close()
 
-    print(len(result))
-    for x in range(100):
-        print(result[x])
-    return result
+    return timeZ
 
-# if __name__ == '__main__':
-#     queryAccel()
+if __name__ == '__main__':
+    queryAccel()

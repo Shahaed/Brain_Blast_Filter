@@ -1,5 +1,7 @@
 from flask import Flask
 from flaskext.mysql import MySQL
+from flask import jsonify
+import shortQuery
 
 mysql = MySQL()
 app = Flask(__name__)
@@ -10,14 +12,28 @@ app.config['MYSQL_DATABASE_HOST'] = 'phly.c7jx0v6pormd.us-east-1.rds.amazonaws.c
 mysql.init_app(app)
 
 
-@app.route('/')
-def hello_world():
+def timeZ():
+    cursor = mysql.get_db().cursor()
+    cursor.execute("SELECT `time_stamp` FROM accel_data")
+    return float(cursor.fetchone()[0])
 
+
+@app.route('/OneSecAvr', methods=['POST'])
+def oneSecData():
+    cursor = mysql.get_db().cursor()
+    cursor.execute("SELECT `time_stamp` FROM accel_data")
+    timeZ = float(cursor.fetchone()[0])
+    return jsonify(shortQuery.meanData(timeZ(),1000))
+
+
+@app.route('/')
+def returnData():
+    zero = timeZ()
     cursor = mysql.get_db().cursor()
     cursor.execute("SELECT * FROM accel_data")
     data = cursor.fetchall()
     out = [x for x in data ]
-    return str(out)
+    return jsonify(out)
 
 
 
