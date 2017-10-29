@@ -25,5 +25,5 @@ def queryAccel():
         print(result[x])
     return result
 
-if __name__ == '__main__':
-    queryAccel()
+# if __name__ == '__main__':
+#     queryAccel()
